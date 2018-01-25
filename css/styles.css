@@ -97,3 +97,77 @@ footer #colonnes .basSection{
 	font-size: 80%;
 	color: #c3c3c3;
 }
+
+/* =======CHARTE DES GRANDEURS =======
+MOBILE : jusqu'à 640px;
+GRANDS ÉCRANS : plus que 1025px;
+*/
+
+/*=========================== STYLES MOBILES ======*/
+@media (max-width: 640px) {
+
+	body {
+		background-color: yellow;
+		background-image: none;
+	}
+
+	#global {
+		background-color: #EAEAEA;
+	}
+
+	#navPrincipale{
+		background-color: #49DCB1;
+	}
+
+	#navPrincipale #burgermenu{
+		display: block;
+		margin: 6px 12px 3px 0px;	
+		width:50px;
+		height:48px;
+	}
+
+	#navPrincipale li{
+	display:none;
+	padding: 1%;
+	margin: 1%;
+	font-size: 50%;
+	white-space:nowrap;
+	text-decoration: none;
+	background-color: #13585f;
+	color: #f1f3f0;
+	border:1px solid #ececec;
+	}
+
+	#navPrincipale ul:active{
+		display: block;
+	}
+
+	#navPrincipale ul:active li{
+		display: inline-block;
+		width: 250px;
+	}
+
+	#entete img {
+		position: relative;
+		width: 100%;
+	}
+
+	#slogan{
+		width: 97%;
+		position: absolute;
+   		bottom: 3px;
+		padding: 3% 0 3% 3%;
+	}
+
+	#slogan h1{
+		font-size: 124%;
+		margin-bottom: 8px;
+	}
+
+	#slogan p{
+		margin-top:20px;
+		font-size: 90%;
+	}
+
+
+}/*fin de media query*/

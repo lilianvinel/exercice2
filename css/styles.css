@@ -51,7 +51,7 @@ body {
 
 #entete {
 	position: relative;
-	background-color: #333;
+	background-color: #333333;
 }
 
 #slogan {
@@ -71,15 +71,6 @@ body {
 footer{
 	background-color: #333333;
 	color:#FFFFFF;
-}
-
-footer .legal{
-	background-color: black;
-	text-align: center;
-	color: #666666;
-	font-size: 95%;
-	font-weight: bold;
-	padding: 2% 0 2% 0;
 }
 
 footer #colonnes .titre-section{

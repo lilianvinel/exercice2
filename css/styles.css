@@ -154,7 +154,6 @@ GRANDS ÉCRANS : plus que 1025px;
 
 	#slogan{
 		width: 97%;
-		position: absolute;
    		bottom: 3px;
 		padding: 3% 0 3% 3%;
 	}
@@ -212,7 +211,6 @@ GRANDS ÉCRANS : plus que 1025px;
 
 	#slogan {
 		background-color: rgba(67, 220, 177, 0.5);
-		position: absolute;
 		width:810px;
 		top:150px;
 		padding-left: 40px;

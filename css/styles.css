@@ -171,3 +171,99 @@ GRANDS ÉCRANS : plus que 1025px;
 
 
 }/*fin de media query*/
+
+/*=========================== STYLES GRANDS ÉCRANS ======*/
+@media (min-width: 1025px) {
+
+	#global {
+		margin-bottom: 5%;
+	}
+
+	#navPrincipale {
+		display: flex;
+	}
+
+	#navPrincipale ul {
+		align-items: center;
+		width: 684px;
+	}
+
+	#navPrincipale li {
+		margin-right: 35px;/*5.12%*/
+	}
+
+	#navPrincipale li a{
+		font-weight: bold;
+		text-decoration: none;
+		color:white;
+	}
+
+	#navPrincipale li a:hover{
+		border-bottom: 5px solid #336699;
+	}
+
+	#navPrincipale ul:hover li{
+		display: block;
+	}
+
+	#burgermenu{
+		display:none;
+	}
+
+	#slogan {
+		background-color: rgba(67, 220, 177, 0.5);
+		position: absolute;
+		width:810px;
+		top:150px;
+		padding-left: 40px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	#slogan h1{
+		color:white;
+		font-size:250%;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+	#slogan p{
+		margin-top: 20px;
+		color:#2668ab;
+		font-size:180%;
+		font-weight: bold;
+	}
+
+	#entete .titre-main{
+		padding: .4em 3%;
+		font-size:33px;
+		font-weight: bold;
+		background-color: #EAEAEA;
+		color: #333333;
+	}
+
+	#colonnes{
+		-webkit-column-count:3;
+		-moz-column-count:3;
+		column-count:3;
+		padding: 4% 0% 7% 8%;
+	}
+
+	footer .legal{
+		background-color: black;
+		text-align: center;
+		color: #666666;
+		font-size: 95%;
+		font-weight: bold;
+		padding: 2% 0 2% 0;
+	}
+
+	footer #colonnes .titre-section{
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	footer #colonnes .elmSection{
+		font-size: 80%;
+		margin-bottom: 1.5px;
+	}

@@ -138,11 +138,6 @@ GRANDS ÉCRANS : plus que 1025px;
 		width: 250px;
 	}
 
-	#entete img {
-		position: relative;
-		width: 100%;
-	}
-
 	#slogan{
 		width: 96%;
    		bottom: 3px;

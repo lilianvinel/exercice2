@@ -162,6 +162,71 @@ GRANDS ÉCRANS : plus que 1025px;
 
 }/*fin de media query*/
 
+/*=========================== STYLES TABLETTE ======*/
+@media (min-width: 641px) and (max-width: 1024px) {
+
+	#navPrincipale #burgermenu{
+		display: block;
+		margin: 6px 12px 3px 0px;	
+		width:56px;
+		height:54px;
+	}
+
+	#navPrincipale ul{
+		display:flex;
+	}	
+
+	#navPrincipale li{
+		display:none;
+		padding: 0.5em;
+		margin: 0.5em;
+	white-space:nowrap;
+	text-decoration: none;
+	background-color: #13585f;
+	color: #f1f3f0;
+	border:1px solid #ececec;
+	}
+
+	#navPrincipale ul:active{
+		display: block;
+	}
+
+	#navPrincipale ul:active li{
+		display: inline-block;
+		width: 250px;
+	}
+
+	#slogan{
+		width: 97%;
+		position: absolute;
+		top: 0;
+		padding: 3% 0 3% 3%;
+	}
+
+	#slogan h1{
+		font-size: 200%;
+		margin-bottom: 8px;
+	}
+
+	#slogan p{
+		margin-top:20px;
+		font-size: 145%;
+		color: #336699;
+	}
+
+	#colonnes{
+		-webkit-column-count:1;
+		-moz-column-count:1;
+		column-count:1;
+		padding: 3% 0% 3.5% 4%;
+	}
+
+	footer #colonnes .basSection{
+		margin-bottom: 50px;
+	}
+
+}/*fin de media query*/
+
 /*=========================== STYLES GRANDS ÉCRANS ======*/
 @media (min-width: 1025px) {
 

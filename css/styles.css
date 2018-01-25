@@ -247,15 +247,6 @@ GRANDS ÉCRANS : plus que 1025px;
 		padding: 4% 0% 7% 8%;
 	}
 
-	footer .legal{
-		background-color: black;
-		text-align: center;
-		color: #666666;
-		font-size: 95%;
-		font-weight: bold;
-		padding: 2% 0 2% 0;
-	}
-
 	footer #colonnes .titre-section{
 		font-weight: bold;
 		margin-bottom: 5px;

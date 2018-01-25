@@ -5,7 +5,7 @@
 body {
 	font-family: Roboto;
 	font-size:62.5%;
-	background-color: pink;
+	background-color: #EAEAEA;
 }
 
 #global {
@@ -14,4 +14,42 @@ body {
 	background-color: #49DCB0;
 	font-size:210%;
 	padding-bottom: 0.6%;
+}
+
+#navPrincipale {
+	display: flex;
+}
+
+#navPrincipale ul {
+	display: flex;
+	align-items: center;
+}
+
+#navPrincipale li {
+	margin-right: 5.12%;
+}
+
+#navPrincipale li a{
+	font-weight: bold;
+	text-decoration: none;
+	color:white;
+}
+
+#navPrincipale li a:hover{
+	border-bottom: 5px solid #336699;
+}
+
+
+
+#navPrincipale ul:hover li{
+	display: block;
+}
+
+#burgermenu{
+	display:none;
+}
+
+#entete {
+	position: relative;
+	background-color: #333;
 }

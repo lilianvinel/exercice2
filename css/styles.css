@@ -222,7 +222,7 @@ GRANDS ÉCRANS : plus que 1025px;
 	}
 
 	footer #colonnes .basSection{
-		margin-bottom: 50px;
+		margin-bottom: 49px;
 	}
 
 }/*fin de media query*/
@@ -244,7 +244,7 @@ GRANDS ÉCRANS : plus que 1025px;
 	}
 
 	#navPrincipale li {
-		margin-right: 35px;/*5.12%*/
+		margin-right: 35px;
 	}
 
 	#navPrincipale li a{

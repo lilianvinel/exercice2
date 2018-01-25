@@ -1,0 +1,284 @@
+@color_1: white;
+@color_2: #2668ab;
+@color_3: #FFFFFF;
+@color_4: #c3c3c3;
+@color_5: #f1f3f0;
+@color_6: #336699;
+@color_7: #333333;
+@font_family_1: Roboto;
+@background_color_1: #EAEAEA;
+@background_color_2: #49DCB0;
+@background_color_3: #333333;
+@background_color_4: rgba(67, 220, 177, 0.5);
+@background_color_5: yellow;
+@background_color_6: #49DCB1;
+@background_color_7: #13585f;
+
+@charset "UTF-8";
+/*=========================== STYLES GÉNÉRAUX ======*/
+/* =======CHARTE DES GRANDEURS =======
+MOBILE : jusqu'à 640px;
+GRANDS ÉCRANS : plus que 1025px;
+*/
+/*=========================== STYLES MOBILES ======*/
+/*fin de media query*/
+/*=========================== STYLES TABLETTE ======*/
+/*fin de media query*/
+/*=========================== STYLES GRANDS ÉCRANS ======*/
+body {
+	font-family: @font_family_1;
+	font-size: 62.5%;
+	background-color: @background_color_1;
+}
+#global {
+	max-width: 1025px;
+	margin: 0 auto;
+	background-color: @background_color_2;
+	font-size: 210%;
+	padding-bottom: 0.6%;
+}
+#navPrincipale {
+	display: flex;
+	ul {
+		display: flex;
+		align-items: center;
+		&:hover {
+			li {
+				display: block;
+			}
+		}
+	}
+	li {
+		margin-right: 5.12%;
+		a {
+			font-weight: bold;
+			text-decoration: none;
+			color: @color_1;
+			&:hover {
+				border-bottom: 5px solid #336699;
+			}
+		}
+	}
+}
+#burgermenu {
+	display: none;
+}
+#entete {
+	position: relative;
+	background-color: @background_color_3;
+}
+#slogan {
+	background-color: @background_color_4;
+	h1 {
+		color: @color_1;
+		font-weight: bold;
+	}
+	p {
+		color: @color_2;
+		font-weight: bold;
+	}
+}
+footer {
+	background-color: @background_color_3;
+	color: @color_3;
+	#colonnes {
+		.titre-section {
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		.elmSection {
+			font-size: 80%;
+			margin-bottom: 1.5px;
+			color: @color_4;
+		}
+		.basSection {
+			font-size: 80%;
+			color: @color_4;
+		}
+	}
+}
+@media (max-width: 640px) {
+	body {
+		background-color: @background_color_5;
+		background-image: none;
+	}
+	#global {
+		background-color: @background_color_1;
+	}
+	#navPrincipale {
+		background-color: @background_color_6;
+		#burgermenu {
+			display: block;
+			margin: 6px 12px 3px 0px;
+			width: 50px;
+			height: 48px;
+		}
+		li {
+			display: none;
+			padding: 1%;
+			margin: 1%;
+			font-size: 50%;
+			white-space: nowrap;
+			text-decoration: none;
+			background-color: @background_color_7;
+			color: @color_5;
+			border: 1px solid #ececec;
+		}
+		ul {
+			&:active {
+				display: block;
+				li {
+					display: inline-block;
+					width: 250px;
+				}
+			}
+		}
+	}
+	#slogan {
+		width: 96%;
+		bottom: 3px;
+		padding: 3% 0 3% 3%;
+		h1 {
+			font-size: 123%;
+			margin-bottom: 8px;
+		}
+		p {
+			margin-top: 20px;
+			font-size: 90%;
+		}
+	}
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+	#navPrincipale {
+		#burgermenu {
+			display: block;
+			margin: 6px 12px 3px 0px;
+			width: 56px;
+			height: 54px;
+		}
+		ul {
+			display: flex;
+			&:active {
+				display: block;
+				li {
+					display: inline-block;
+					width: 250px;
+				}
+			}
+		}
+		li {
+			display: none;
+			padding: 0.5em;
+			margin: 0.5em;
+			white-space: nowrap;
+			text-decoration: none;
+			background-color: @background_color_7;
+			color: @color_5;
+			border: 1px solid #ececec;
+		}
+	}
+	#slogan {
+		width: 97%;
+		padding: 3% 0 3% 3%;
+		h1 {
+			font-size: 200%;
+			margin-bottom: 8px;
+		}
+		p {
+			margin-top: 20px;
+			font-size: 145%;
+			color: @color_6;
+		}
+	}
+	#colonnes {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+		padding: 3% 0% 3.5% 4%;
+	}
+	footer {
+		#colonnes {
+			.basSection {
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
+@media (min-width: 1025px) {
+	#global {
+		margin-bottom: 5%;
+	}
+	#navPrincipale {
+		display: flex;
+		ul {
+			align-items: center;
+			width: 684px;
+			&:hover {
+				li {
+					display: block;
+				}
+			}
+		}
+		li {
+			margin-right: 34px;
+			a {
+				font-weight: bold;
+				text-decoration: none;
+				color: @color_1;
+				&:hover {
+					border-bottom: 5px solid #336699;
+				}
+			}
+		}
+	}
+	#burgermenu {
+		display: none;
+	}
+	#slogan {
+		background-color: @background_color_4;
+		width: 810px;
+		top: 150px;
+		padding-left: 40px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		h1 {
+			color: @color_1;
+			font-size: 249%;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		p {
+			margin-top: 20px;
+			color: @color_2;
+			font-size: 180%;
+			font-weight: bold;
+		}
+	}
+	#entete {
+		.titre-main {
+			padding: .4em 3%;
+			font-size: 33px;
+			font-weight: bold;
+			background-color: @background_color_1;
+			color: @color_7;
+		}
+	}
+	#colonnes {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+		padding: 4% 0% 7% 7%;
+	}
+	footer {
+		#colonnes {
+			.titre-section {
+				font-weight: bold;
+				margin-bottom: 5px;
+			}
+			.elmSection {
+				font-size: 80%;
+				margin-bottom: 1.5px;
+			}
+		}
+	}
+}
